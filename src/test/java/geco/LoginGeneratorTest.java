@@ -45,4 +45,11 @@ public class LoginGeneratorTest {
                 "PDUR", loginGenerator.generateLoginForNomAndPrenom("Dùrand"
                         , "Paul"));
     }
+
+    @Test
+    public void generationLoginPDU() {
+        Assert.assertEquals("PDU login généré pour Paul Du",
+                "PDU", loginGenerator.generateLoginForNomAndPrenom("Du",
+                        "Paul"));
+    }
 }
